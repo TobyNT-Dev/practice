@@ -45,6 +45,7 @@ export const Slideshow = () => {
 
     return (
     <div className="slideshow">
+        <h2>Vi elsker at bage brød</h2>
         <img className='leftArrow arrow' onClick={ () => slideleft() } src={ Arrow } alt="" />
         <img className='rightArrow arrow' onClick={ () => slideright() } src={ Arrow } alt="" />
         <div className="image-box" ref={divRef}>
