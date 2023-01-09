@@ -1,0 +1,37 @@
+.slideshow {
+    overflow: hidden;
+    .arrow {
+        position: absolute;
+        display: flex;
+        z-index: 10;
+    }
+    .leftArrow {
+        transform: rotateY(180deg);
+        opacity: 50%;
+        top: 30vh;
+    }
+    .rightArrow {
+        opacity: 50%;
+        right: 0;
+        top: 30vh;
+    }
+    .image-box {
+        width: 300%;
+        display: flex;
+        transition: 300ms ease-in-out;
+        position: absolute;
+        z-index: 0;
+        .img1 {
+            width: 33.33%;
+            display: inline-block;
+        }
+        .img2 {
+            width: 33.33%;
+            display: inline-block;
+        }
+        .img3 {
+            width: 33.33%;
+            display: inline-block;
+        }
+    }
+}

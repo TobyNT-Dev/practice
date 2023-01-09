@@ -1,0 +1,32 @@
+.login-box {
+    height: 100vh;
+    position: absolute;
+    display: block;
+    background-color: rgba(0, 0, 0, 0.587);
+    form {
+        width: 20vw;
+        margin: 10vw 39vw;
+        padding: 1vw;
+        background-color: rgb(28, 28, 28);
+        display: inline-block;
+        border-radius: 5px;
+        label {
+            font-family: sans-serif;
+            color: white;
+            input {
+                border-radius: 5px;
+                margin: 0.5vw;
+                &:focus {
+                    outline: none !important;
+                }
+            }
+        }
+        button {
+            border-radius: 5px;
+            border: none;
+            &:focus {
+                outline: none !important;
+            }
+        }
+    }
+}
