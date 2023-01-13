@@ -1,6 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Lobster&display=swap");
 .slideshow {
   overflow: hidden;
+  width: 100vw;
+  height: 45vw;
 }
 .slideshow h2 {
   position: absolute;
@@ -10,12 +12,14 @@
   font-size: 5vw;
   font-family: Lobster;
   color: white;
-  text-shadow: black 0px 5px 20px;
+  text-shadow: rgba(0, 0, 0, 0.733) 0px 5px 25px;
 }
 .slideshow .arrow {
   position: absolute;
   display: flex;
   z-index: 10;
+  filter: invert(100%);
+  cursor: pointer;
 }
 .slideshow .leftArrow {
   transform: rotateY(180deg);
@@ -28,21 +32,29 @@
   top: 30vh;
 }
 .slideshow .image-box {
-  width: 300%;
+  width: 300vw;
   display: flex;
-  transition: 300ms ease-in-out;
-  position: absolute;
+  transition: 800ms ease-in-out;
   z-index: 0;
 }
-.slideshow .image-box .img1 {
+.slideshow .image-box div {
   width: 33.33%;
   display: inline-block;
 }
-.slideshow .image-box .img2 {
+.slideshow .image-box div .img1 {
+  width: 100%;
+}
+.slideshow .image-box div {
   width: 33.33%;
   display: inline-block;
 }
-.slideshow .image-box .img3 {
+.slideshow .image-box div .img2 {
+  width: 100%;
+}
+.slideshow .image-box div {
   width: 33.33%;
   display: inline-block;
+}
+.slideshow .image-box div .img3 {
+  width: 100%;
 }

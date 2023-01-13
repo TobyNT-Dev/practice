@@ -2,6 +2,8 @@
 
 .slideshow {
     overflow: hidden;
+    width: 100vw;
+    height: 45vw;
     h2 {
         position: absolute;
         z-index: 10;
@@ -10,12 +12,14 @@
         font-size: 5vw;
         font-family: Lobster;
         color: white;
-        text-shadow: black 0px 5px 20px;
+        text-shadow: rgba(0, 0, 0, 0.733) 0px 5px 25px;
     }
     .arrow {
         position: absolute;
         display: flex;
         z-index: 10;
+        filter: invert(100%);
+        cursor: pointer;
     }
     .leftArrow {
         transform: rotateY(180deg);
@@ -28,22 +32,30 @@
         top: 30vh;
     }
     .image-box {
-        width: 300%;
+        width: 300vw;
         display: flex;
-        transition: 300ms ease-in-out;
-        position: absolute;
+        transition: 800ms ease-in-out;
         z-index: 0;
-        .img1 {
+        div {
             width: 33.33%;
             display: inline-block;
+            .img1 {
+                width: 100%;
+            }
         }
-        .img2 {
+        div {
             width: 33.33%;
             display: inline-block;
+            .img2 {
+                width: 100%;
+            }
         }
-        .img3 {
+        div {
             width: 33.33%;
             display: inline-block;
+            .img3 {
+                width: 100%;
+            }
         }
     }
 }

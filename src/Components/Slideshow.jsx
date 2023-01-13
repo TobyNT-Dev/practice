@@ -27,20 +27,32 @@ export const Slideshow = () => {
     }
     
     useEffect(() => {
-        console.log(slide)
+
+        const slideLoop = setInterval(() => {
+            if (slide < 3) {
+                setSlide(state => state + 1)
+            }
+            else {
+                setSlide(1)
+            }
+        }, 5000);
+        
+        return () => {
+            clearInterval(slideLoop);
         switch(slide) {
             case 1:
-            divRef.current.style.left = "0%";
+            divRef.current.style.marginLeft = "0%";
             break;
             case 2:      
-            divRef.current.style.left = "-100%";
+            divRef.current.style.marginLeft = "-100%";
             break;
             case 3:
-            divRef.current.style.left = "-200%";
+            divRef.current.style.marginLeft = "-200%";
               break;
             default:
             return
         }
+    }
     },[slide])
 
     return (
@@ -49,9 +61,15 @@ export const Slideshow = () => {
         <img className='leftArrow arrow' onClick={ () => slideleft() } src={ Arrow } alt="" />
         <img className='rightArrow arrow' onClick={ () => slideright() } src={ Arrow } alt="" />
         <div className="image-box" ref={divRef}>
+            <div>
             <img className="img1" src={ Bread1 } alt="" />
+            </div>
+            <div>
             <img className="img2" src={ Bread2 } alt="" />
+            </div>
+            <div>
             <img className="img3" src={ Bread3 } alt="" />
+            </div>
         </div>
     </div>
   )

@@ -1,4 +1,44 @@
+@import url("https://fonts.googleapis.com/css2?family=Lobster&display=swap");
 .home-page {
   margin: 0;
   padding: 0;
+}
+.home-page header {
+  width: 100vw;
+  height: 10vw;
+}
+.home-page .content-top {
+  margin-top: 45vw;
+  display: flex;
+  justify-content: center;
+  font-family: Lobster;
+  font-size: 1.8vw;
+  margin-bottom: 1vw;
+}
+.home-page .articles-header {
+  display: flex;
+  justify-content: center;
+  width: 30vw;
+  margin: 0 auto 2vw auto;
+  text-align: center;
+}
+.home-page .article1 {
+  margin-left: 15vw;
+}
+.home-page article {
+  display: inline-block;
+  width: 14vw;
+  margin: 10vw 6vw;
+  text-align: center;
+}
+.home-page article h3 {
+  margin-bottom: 1vw;
+}
+.home-page article p {
+  line-height: 1.5vw;
+  color: grey;
+}
+.home-page article img {
+  margin-bottom: 3vw;
+  border-radius: 100%;
 }

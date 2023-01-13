@@ -1,0 +1,47 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+
+.newsletter {
+    height: 25vw;
+    overflow: hidden;
+    img {
+        width: 100%;
+    }
+    .news-content {
+        position: absolute;
+        margin-top: 7vw;
+        margin-left: 20vw;
+        h3 {
+            font-family: Lobster;
+            color: white;
+            font-size: 2vw;
+        }
+        p {
+            color: white;
+        }
+        input {
+            margin-top: 3vw;
+            border: none;
+            height: 2vw;
+            width: 35vw;
+        }
+        button {
+            border: none;
+            background-color: rgb(70, 75, 98);
+            height: 2vw;
+            color: white;
+            width: 5vw;
+            cursor: pointer;
+        }
+        span {
+            margin-top: 3vw;
+            padding: 0.4vw;
+            background-color: rgb(91, 91, 91);
+            svg {
+                fill: rgb(255, 255, 255);
+                margin: 0;
+                padding: 0;
+                height: 1vw;
+            }
+        }
+    }
+}

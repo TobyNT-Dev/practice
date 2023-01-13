@@ -1,0 +1,23 @@
+@import url("https://fonts.googleapis.com/css2?family=Lobster&display=swap");
+nav {
+  height: 0;
+  top: 0;
+  display: flex;
+  justify-content: center;
+  position: sticky;
+  z-index: 1000;
+  background-color: red;
+}
+nav a {
+  color: white;
+  text-decoration: none;
+  margin-top: 3.7vw;
+  margin-left: 1vw;
+  margin-right: 1vw;
+}
+nav h2 {
+  color: white;
+  font-family: Lobster;
+  margin: 1.5vw;
+  font-size: 4vw;
+}
